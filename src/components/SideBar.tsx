@@ -13,6 +13,8 @@ interface SideBarProps {
   handleClickButton: (id: number) => void
 }
 
+import '../styles/sidebar.scss';
+
 export function SideBar({selectedGenreId, handleClickButton} : SideBarProps) {
   
   const [genres, setGenres] = useState<GenreResponseProps[]>([]);
